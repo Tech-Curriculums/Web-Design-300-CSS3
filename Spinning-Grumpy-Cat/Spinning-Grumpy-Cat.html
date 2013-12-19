@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title> Spinning Grumpy Cat </title>
+
+<style>
+
+.container {
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+    padding:10px;
+    border: 1px solid black;
+    position:relative;
+    perspective:400px;
+    -webkit-perspective:400px;
+    /* Safari and Chrome */
+}
+.image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotatey(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotatey(360deg);
+        transform:rotatey(360deg);
+    }
+}
+
+</style>
+</head>
+
+<div class="container">
+    <img class="image" src="http://makeameme.org/media/templates/120/grumpy_cat.jpg" alt="" width="120" height="120">
+</div>
+
+</div>
+
+</body>
+</html>
